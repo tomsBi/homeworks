@@ -6,7 +6,7 @@ class Person{
     private ?string $middleName;
     private string $surname;
 
-    public function __construct(string $name, string $middleName =  null, string $surname){
+    public function __construct(string $name, string $surname, string $middleName =  null){
         $this->name = $name;
         $this->middleName = $middleName;
         $this->surname = $surname;
@@ -24,9 +24,9 @@ class Person{
     }
 }
 
-$janis  = new Person("Jānis", null, "Gitendorfs");
-$ilze = new Person ("Ilze", "Sandra", "Bērziņa");
-$toms = new Person ("Toms", null, "Bičkovskis");
+$janis  = new Person("Jānis", "Gitendorfs", "");
+$ilze = new Person ("Ilze", "Bērziņa", "Sandra");
+$toms = new Person ("Toms", "Bičkovskis", "");
 
 echo $janis->getName() . " " . $janis ->getMiddleName() . " " . $janis->getSurname();
 echo PHP_EOL;
