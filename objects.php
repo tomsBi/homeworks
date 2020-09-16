@@ -3,33 +3,34 @@
 
 class Person{
     private string $name;
-    private string $middleName;
+    private ?string $middleName;
     private string $surname;
 
-    public function __construct(string $name, string $middleName, string $surname){
-        $this->name=$name;
-        $this->middleName=$middleName;
-        $this->surname=$surname;
+    public function __construct(string $name, $middleName =  null, string $surname){
+        $this->name = $name;
+        $this->middleName = $middleName;
+        $this->surname = $surname;
     }
 
-    public function get_name(){
+    public function getName() {
         return $this->name;
     }
 
-    public function get_middleName(){
+    public function getMiddleName() {
         return $this->middleName;
     }
-    public function get_surname(){
+    public function getSurname() {
         return $this->surname;
     }
 }
 
-$janis  = new Person("Jānis", "", "Gitendorfs");
+$janis  = new Person("Jānis", null, "Gitendorfs");
 $ilze = new Person ("Ilze", "Sandra", "Bērziņa");
-$toms = new Person ("Toms", "", "Bičkovskis");
+$toms = new Person ("Toms", null, "Bičkovskis");
 
-echo $janis->get_name() . " " . $janis ->get_middleName() . " " . $janis->get_surname();
+echo $janis->getName() . " " . $janis ->getMiddleName() . " " . $janis->getSurname();
 echo PHP_EOL;
-echo $ilze->get_name() . " " . $ilze ->get_middleName() . " " . $ilze->get_surname();
+echo $ilze->getName() . " " . $ilze ->getMiddleName() . " " . $ilze->getSurname();
 echo PHP_EOL;
-echo $toms->get_name() . " " . $toms ->get_middleName() . " " . $toms->get_surname();
+echo $toms->getName() . " " . $toms ->getMiddleName() . " " . $toms->getSurname();
+echo PHP_EOL;
