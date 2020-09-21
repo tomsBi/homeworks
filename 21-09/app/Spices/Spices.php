@@ -4,11 +4,12 @@ namespace App\Spices;
 
 abstract class Spices
 {
- public abstract function getName(): string;
+    public abstract function getName(): string;
 
 }
 
-Class Salt extends Spices{
+class Salt extends Spices
+{
 
     public function getName(): string
     {
@@ -16,7 +17,8 @@ Class Salt extends Spices{
     }
 }
 
-Class Basil extends Spices{
+class Basil extends Spices
+{
 
     public function getName(): string
     {
@@ -24,7 +26,8 @@ Class Basil extends Spices{
     }
 }
 
-Class Oregano extends Spices{
+class Oregano extends Spices
+{
 
     public function getName(): string
     {
