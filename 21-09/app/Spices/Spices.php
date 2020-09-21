@@ -16,6 +16,22 @@ Class Salt extends Spices{
     }
 }
 
+Class Basil extends Spices{
+
+    public function getName(): string
+    {
+        return 'Basil';
+    }
+}
+
+Class Oregano extends Spices{
+
+    public function getName(): string
+    {
+        return 'Oregano';
+    }
+}
+
 
 class SpicesCollection
 {
