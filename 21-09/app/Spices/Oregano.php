@@ -2,9 +2,9 @@
 
 namespace App\Spices;
 
-use App\Spices;
+use App\Spice;
 
-class Oregano extends Spices
+class Oregano extends Spice
 {
 
     public function getName(): string

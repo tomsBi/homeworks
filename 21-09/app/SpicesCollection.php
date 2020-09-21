@@ -6,7 +6,7 @@ class SpicesCollection
 {
     private array $spices = [];
 
-    public function add(Spices $spices): void
+    public function add(Spice $spices): void
     {
         $this->spices[] = $spices;
     }

@@ -2,9 +2,9 @@
 
 namespace App\Spices;
 
-use App\Spices;
+use App\Spice;
 
-class Basil extends Spices
+class Basil extends Spice
 {
 
     public function getName(): string

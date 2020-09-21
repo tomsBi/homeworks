@@ -2,7 +2,7 @@
 
 namespace App;
 
-abstract class Spices
+abstract class Spice
 {
     public abstract function getName(): string;
 
