@@ -11,4 +11,5 @@ class Oregano extends Spice
     {
         return 'Oregano';
     }
+
 }

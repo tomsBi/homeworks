@@ -11,4 +11,5 @@ class Salt extends Spice
     {
         return 'Salt';
     }
+
 }
