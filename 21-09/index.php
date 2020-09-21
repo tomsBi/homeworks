@@ -4,8 +4,7 @@
 require_once __DIR__ . '/app/Spice.php';
 require_once __DIR__ . '/app/SpicesCollection.php';
 
-foreach (glob('app/Spices/*.php') as $filename)
-{
+foreach (glob('app/Spices/*.php') as $filename) {
     require_once $filename;
 }
 
