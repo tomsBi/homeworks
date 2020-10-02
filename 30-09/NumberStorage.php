@@ -4,7 +4,7 @@ class NumberStorage
 {
     public function load(): array
     {
-        return (array) explode(' ', file_get_contents('./newFile.txt'));
+        return (array)explode(' ', file_get_contents('./newFile.txt'));
     }
 
     public function store(array $numbers): void

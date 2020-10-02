@@ -4,7 +4,7 @@ require_once 'NumberGenerator.php';
 require_once 'NumberStorage.php';
 
 $numberStorage = new NumberStorage();
-$numberGenerator = new NumberGenerator(1,1000,$numberStorage->load());
+$numberGenerator = new NumberGenerator(1, 1000, $numberStorage->load());
 
 $randomNumber = $numberGenerator->getNumber();
 
