@@ -1,0 +1,5 @@
+Water,100,10|
+Hotdog,190,7|
+Snickers,80,18|
+Apple,30,25|
+Orange,50,13|
