@@ -27,7 +27,7 @@
     if (isset($_POST['submit'])) {
         $person->saveData($_POST['name'], $_POST['surname'], $_POST['personId'], $_POST['address']);
     } elseif (isset($_POST['search'])) {
-       echo $person->search();
+        echo $person->search();
     }
     ?>
 </p>
