@@ -32,5 +32,18 @@ class PinEntry
         }
     }
 
+    public function getMessages(): array
+    {
+        $content = file_get_contents('messages.csv');
+        $data = array_filter(explode(PHP_EOL, $content));
+        $messages=[];
+        foreach ($data as $message) {
+            $messageData = (array)explode(',', $message);
+            $messages[] = $messageData;
+        }
+        return $messages;
+
+    }
+
 
 }

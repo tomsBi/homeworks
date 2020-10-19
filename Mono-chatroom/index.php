@@ -85,5 +85,9 @@ if (isset($_POST['logout'])) {
         <input class="button" name="send" type="submit" value="Send">
     </form>
 <?php } ?>
+    <?php foreach ($pinEntry->getMessages() as $message){?>
+ <p>
+     <?php echo 'Users ID: ' . $message[0] . ' - ' .$message[1];}?>
+</p>
 </body>
 </html>
